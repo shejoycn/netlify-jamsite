@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <main>
+  <h3>Photo pages:</h3>
 	<div class="catalogue">
 		{{ range (.Paginate .Pages).Pages }}
 			{{ .Render "summary" }}
