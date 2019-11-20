@@ -5,9 +5,15 @@
 
 		{{ partial "single/title.html" . }}
 
+		{{- if .Params.tags }}
+		{{ partial "tags.html" .Params.tags }}
+		{{- end }}
+
 		{{ partial "single/header.html" . }}
 
 		<div style="padding:1rem; background:powderblue">{{ .Content }}</div>
+
+		{{ partial "comments.html" . }}
 
 		{{ partial "single/footer.html" . }}
 	</div>

@@ -2,6 +2,8 @@
 title: "Hugo Dog"
 date: 2019-11-06T17:03:45+02:00
 draft: true
+photoauthor: "Ray Viljoen"
+tags: ['photo', 'dog', 'tongue']
 ---
 
 ## HUGO the Dog!
