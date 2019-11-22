@@ -3,6 +3,13 @@
 <main>
 	<div class="post">
 
+		TEST
+		<hr>
+		{{- range .Site.Pages }}
+		{{ .Title }} by {{ .Params.Author }}<br>
+		{{- end }}
+		<hr>
+
 		{{ partial "single/title.html" . }}
 
 		{{- if .Params.tags }}
