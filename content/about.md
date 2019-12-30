@@ -8,6 +8,19 @@ type: topinfo
 
 # About JAMSite
 
+{{< highlight html >}}
+<h1 class="post-title" style="color:{{ $titleColor }};" >{{ .Title }}</h1>
+<div class="post-line"></div>
+{{< /highlight >}}
+
+{{< highlight js >}}
+function() {
+  return "Hello World"
+}
+{{< /highlight >}}
+
+{{< youtube DhNMHcRSNdo >}}
+
 Some infor re this site at the top level..
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
