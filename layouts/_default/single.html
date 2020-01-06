@@ -2,8 +2,24 @@
 
 <main>
 
-	{{ $codeStyles := resources.Get "scss/code.scss" | toCSS | minify }}
-	<link rel="stylesheet" href="{{ $codeStyles.RelPermalink }}">
+	DATA TESTS:
+	<hr>
+	{{ range .Site.Data.users }}
+	<strong>{{ .name }} {{ .surname }}</strong><br>
+	<small>{{ range .skills }}{{ . }}, {{ end }}</small>
+	<hr>
+	{{ end }}
+
+	{{ range getJSON "https://jsonplaceholder.typicode.com/photos?_limit=5" }}
+	<img style="float:left;" src="{{ .thumbnailUrl }}" alt="{{ .title }}">
+	{{ end }}
+	<hr>
+
+	{{ range getJSON "https://jsonplaceholder.typicode.com/posts?_limit=5" }}
+	<h3>{{ .title | humanize }}</h3>
+	<p>{{ .body }}</p>
+	<br>
+	{{ end }}
 
 	<div class="post">
 		{{ partial "single/post-info.html" . }}
