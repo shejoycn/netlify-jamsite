@@ -1,7 +1,7 @@
 ---
 title: "Article One"
 date: 2020-02-28T14:07:18+02:00
-draft: true
+draft: false
 author: Author Name
 ---
 
