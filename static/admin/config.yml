@@ -1,0 +1,26 @@
+backend:
+    name: github
+    repo: shejoycn/netlify-jamsite
+
+media_folder: static/media
+public_folder: /media
+collections:
+    -   name : "page"
+        label : "Page"
+        folder : "content/"
+        create : true
+        slug : "{{slug}}"
+        fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Author", name: "author", widget: "select", options : ["Shejoy","Cherian"] }
+            - { label: "Date", name: "date", widget: "datetime" }
+            - { label: "Conent", name: "body", widget: "markdown" }
+    -   name : "premium"
+        label : "Premium Page"
+        folder : "content/premium"
+        create : true
+        slug : "{{slug}}"
+        fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Author", name: "author", widget: "select", options : ["Shejoy","Cherian"] }
+            - { label: "Date", name: "date", widget: "datetime" }
