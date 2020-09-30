@@ -1,9 +1,8 @@
 ---
-title: "First Page"
+title: First Pagedsgfgdfgfgfg
 date: 2020-09-21T12:11:08+05:30
 draft: false
-author : Shejoy Cherian
-
+author: Shejoy Cherian
 ---
 
 # First Jamstack Page
